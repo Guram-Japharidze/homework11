@@ -1,0 +1,246 @@
+@import url(variable.css);
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    padding: 32px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 48px 153px 153px 284px;
+    grid-template-areas:
+        "header header header header"
+        "aside cover cover img1 "
+        "aside cover cover img2 "
+        "card1 card2 card3 card4";
+    gap: 34px 40px;
+    background-color: var(--color2);
+}
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+
+}
+
+.header_ul {
+    display: flex;
+    column-gap: 84px;
+}
+
+.header_a {
+    color: var(--color5);
+    font-family: Inter;
+    font-size: var(--font18);
+    font-weight: var(--weight_regular);
+}
+
+.header_div {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.search_div {
+    display: flex;
+    padding: 8px 20px;
+    column-gap: 100px;
+    color: var(--color3);
+    font-family: Inter;
+    font-size: var(--font14);
+    font-weight: var(--weight_regular);
+    border-radius: var(--border4);
+    background: rgba(--color1);
+    box-shadow: 1.52px 3px 3px -0.8px rgba(--color1) inset,
+        0px -0.3px 1px 0px rgba(--color6) inset;
+}
+
+.fa-magnifying-glass {
+    font-size: var(--font16);
+}
+
+.header_button {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    border-radius: var(--border4);
+    background: rgba(--color1);
+    box-shadow: 0px 2px 4px -2px rgba(--color6) inset, 0px 2px 4px 0px rgba(--color1);
+    border: none;
+}
+
+.fa-user {
+    color: var(--color3);
+}
+
+.fa-cart-shopping {
+    color: var(--color4);
+}
+
+
+
+/* aside */
+aside {
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 4px 4px 0px rgba(--color1) inset, 0px -1px 4px 0px rgba(--color6) inset;
+    grid-area: aside;
+}
+
+h2 {
+    color: var(--color4);
+    font-family: Inter;
+    font-size: var(--font16);
+    font-weight: var(--weight_regular);
+    line-height: 27px;
+    margin-top: 38px;
+    margin-left: 40px;
+}
+
+.aside_ul {
+    margin-top: 16px;
+    margin-left: 48px;
+}
+
+.active,
+.no_active {
+    color: var(--color3);
+    font-family: Inter;
+    font-size: var(--font14);
+    font-style: normal;
+    font-weight: var(--weight_regular);
+    line-height: 25px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* cover */
+.cover {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    grid-area: cover;
+
+}
+
+.cover_img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.price {
+    background-color: var(--color5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.price_cost {
+    color: var(--color2);
+    font-family: Inter;
+    font-size: var(--font16);
+    font-weight: var(--weight_bold);
+    line-height: 24px;
+}
+
+.price_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 9px 50px 9px 51px;
+    background: var(--color4);
+    border: none;
+    color: var(--color5);
+    font-family: Inter;
+    font-size: var(--font14);
+    font-style: normal;
+    font-weight: var(--weight_bold);
+    line-height: 22px;
+}
+
+/* images */
+.img1 {
+    background-color: var(--color5);
+    grid-area: img1;
+
+
+}
+
+.img2 {
+    background-color: var(--color5);
+    grid-area: img2;
+
+}
+
+.images {
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+}
+
+/* cards */
+.card1,
+.card2,
+.card3,
+.card4 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    position: relative;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+h3 {
+    position: absolute;
+    color: var(--color2);
+    font-family: Inter;
+    font-size: var(--font24);
+    font-style: normal;
+    font-weight: var(--weight_bold);
+    line-height: 32px;
+}
+
+.card_image {
+    object-fit: cover;
+    width: 100%;
+    height: 180px;
+}
+
+.card_button {
+    padding: 9px 8px 9px 10px;
+}
+
+.card_text {
+    color: var(--color5);
+    font-family: Inter;
+    font-size: var(--font16);
+    font-weight: var(--weight_regular);
+    line-height: 24px;
+}
