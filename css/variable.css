@@ -7,12 +7,12 @@
     --weight_bold:bold;
     --weight_regular:regular;
 
-    --color1:#000000 20%;
+    --color1:rgba(0, 0, 0, 0.20);
     --color2:#1c5550;
     --color3:#91B599;
     --color4:#C3B97F;
     --color5:#DFD9D9;
-    --color6:#DFD9D9 40%;
+    --color6:rgba(223, 217, 217, 0.40);
     --border4: 4px;
     
     

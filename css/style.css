@@ -54,9 +54,8 @@ header {
     font-size: var(--font14);
     font-weight: var(--weight_regular);
     border-radius: var(--border4);
-    background: rgba(--color1);
-    box-shadow: 1.52px 3px 3px -0.8px rgba(--color1) inset,
-        0px -0.3px 1px 0px rgba(--color6) inset;
+    background: var(--color1);
+    box-shadow: 1.52px 3px 3px -0.8px var(--color1) inset,0px -0.3px 1px 0px var(--color6) inset;
 }
 
 .fa-magnifying-glass {
@@ -68,8 +67,8 @@ header {
     height: 32px;
     padding: 4px;
     border-radius: var(--border4);
-    background: rgba(--color1);
-    box-shadow: 0px 2px 4px -2px rgba(--color6) inset, 0px 2px 4px 0px rgba(--color1);
+    background: var(--color1);
+    box-shadow: 0px 2px 4px -2px var(--color6) inset, 0px 2px 4px 0px var(--color1);
     border: none;
 }
 
@@ -86,7 +85,7 @@ header {
 /* aside */
 aside {
     background: rgba(0, 0, 0, 0.20);
-    box-shadow: 0px 4px 4px 0px rgba(--color1) inset, 0px -1px 4px 0px rgba(--color6) inset;
+    box-shadow: 0px 4px 4px 0px var(--color1) inset, 0px -1px 4px 0px var(--color6) inset;
     grid-area: aside;
 }
 
